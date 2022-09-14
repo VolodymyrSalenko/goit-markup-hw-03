@@ -12,6 +12,18 @@ body {
   background: var(--main-background);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .list {
   list-style: none;
 }
@@ -37,7 +49,28 @@ body {
   margin: -1px;
 }
 
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /*-------------------Меню-------------------*/
+
+.menu {
+  border-bottom: 1px solid #ececec;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -52,6 +85,16 @@ body {
   color: #2196f3;
 }
 
+.menu-list {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.menu-item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .menu-link,
 .mail-link,
 .tel-link {
@@ -63,6 +106,9 @@ body {
 
 .menu-link {
   color: var(--main-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .mail-link,
 .tel-link {
@@ -78,10 +124,22 @@ body {
   color: var(--accent-color);
 }
 
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-item:first-child {
+  margin-right: 50px;
+}
+
 /*-------------Розділ герой -------------*/
 
 .hero {
   background: var(--accent-background);
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-tittle {
@@ -92,6 +150,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+
+  width: 696px;
+  margin: 0 auto;
 }
 
 .hero-btn {
@@ -105,8 +166,16 @@ body {
 
   background: #2196f3;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   cursor: pointer;
+
+  display: block;
+  padding: 10px 30px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn:hover,
@@ -116,11 +185,27 @@ body {
 
 /*-------------Розділ про переваги компанії-------------*/
 
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.advantages-list {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.advantages-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .advantage-tittle {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 .advantage-text {
   font-size: 14px;
@@ -131,11 +216,22 @@ body {
 
 /*-------Розділ про напрями діяльності компанії------------*/
 
+.about {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
 .about-tittle {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.about-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 /*--------------------Розділ про команду---------------------*/
