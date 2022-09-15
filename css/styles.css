@@ -21,7 +21,14 @@ h6,
 p,
 ul {
   margin: 0;
+}
+
+ul {
   padding: 0;
+}
+
+img {
+  display: block;
 }
 
 .list {
@@ -192,7 +199,6 @@ ul {
 
 .advantages-list {
   display: flex;
-  align-items: center;
   column-gap: 30px;
 }
 .advantages-item {
@@ -237,12 +243,30 @@ ul {
 /*--------------------Розділ про команду---------------------*/
 .team {
   background: #f5f4fa;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-tittle {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.team-item {
+  flex-basis: calc((100%-3 * 30px) / 4);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-tittle {
@@ -251,6 +275,8 @@ ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 30px;
 }
 .team-item-job {
   font-size: 16px;
@@ -258,16 +284,23 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
+
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 /*------------------------------Футер----------------------*/
 
 .footer {
   background: var(--accent-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
   color: #ffffff;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-list {
@@ -276,6 +309,10 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-link {
@@ -294,6 +331,18 @@ footer .tel-link {
 
 /*----------------------Розділ портфоліо---------------*/
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  margin-bottom: 50px;
+}
+
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -307,6 +356,8 @@ footer .tel-link {
   border: none;
 
   cursor: pointer;
+
+  padding: 6px 22px;
 }
 
 .portfolio-btn:hover,
@@ -315,10 +366,32 @@ footer .tel-link {
   color: #ffffff;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.portfolio-project {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.portfolio-project-wraper {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
 .portfolio-project-tittle {
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
 .portfolio-project-text {
