@@ -56,6 +56,11 @@ img {
   margin: -1px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   max-width: 1200px;
   padding-left: 15px;
@@ -192,11 +197,6 @@ img {
 
 /*-------------Розділ про переваги компанії-------------*/
 
-.advantages {
-  padding-top: 94px;
-  padding-bottom: 47px;
-}
-
 .advantages-list {
   display: flex;
   column-gap: 30px;
@@ -223,9 +223,9 @@ img {
 /*-------Розділ про напрями діяльності компанії------------*/
 
 .about {
-  padding-top: 47px;
-  padding-bottom: 94px;
+  padding-top: 0;
 }
+
 .about-tittle {
   font-size: 36px;
   line-height: 1.17;
@@ -243,9 +243,6 @@ img {
 /*--------------------Розділ про команду---------------------*/
 .team {
   background: #f5f4fa;
-
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .team-tittle {
   font-size: 36px;
@@ -264,6 +261,7 @@ img {
 .team-item {
   flex-basis: calc((100%-3 * 30px) / 4);
 
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -330,11 +328,6 @@ footer .tel-link {
 }
 
 /*----------------------Розділ портфоліо---------------*/
-
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .portfolio-filter {
   display: flex;
